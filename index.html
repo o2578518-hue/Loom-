@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111827"><title>My Store | Online Shop</title>
+<style>
+:root{--ink:#151b2b;--muted:#697184;--paper:#f6f7f2;--white:#fff;--lime:#d9f66f;--line:#e4e6df;--radius:22px;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}.top{height:74px;padding:0 clamp(16px,5vw,70px);display:flex;align-items:center;justify-content:space-between;gap:16px;position:sticky;top:0;background:#f6f7f2ed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:5}.brand{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:900;letter-spacing:.14em}.mark{display:grid;place-items:center;width:34px;height:34px;border-radius:11px;background:var(--lime);font-size:17px;letter-spacing:0}.nav{display:flex;gap:24px;color:var(--muted);font-size:14px}.actions{display:flex;gap:8px;align-items:center}.btn{border:0;border-radius:999px;padding:12px 17px;font-size:13px;font-weight:750;display:inline-flex;justify-content:center;align-items:center;gap:8px;transition:.18s}.btn:hover{transform:translateY(-1px)}.dark{background:var(--ink);color:white}.light{background:white;border:1px solid var(--line)}.hero{margin:24px auto 0;width:min(1240px,calc(100% - 32px));min-height:490px;border-radius:30px;background:#e9eddf;display:grid;grid-template-columns:1fr 1fr;overflow:hidden}.hero-copy{padding:clamp(32px,7vw,88px);align-self:center}.eyebrow{font-size:10px;font-weight:900;letter-spacing:.2em;color:#747b63}.hero h1{font-size:clamp(42px,6vw,78px);line-height:.98;letter-spacing:-.065em;margin:18px 0}.hero h1 span{color:#778c38}.lead{max-width:390px;line-height:1.7;color:#626b5b}.hero-art{position:relative;min-height:370px;overflow:hidden;background:#d9e1c7}.orb{position:absolute;width:280px;height:280px;border-radius:50%;background:#f8f9ef;right:15%;top:10%}.package{position:absolute;width:160px;height:220px;background:#d8f16d;border:2px solid #293124;border-radius:18px;left:24%;top:25%;transform:rotate(-10deg);box-shadow:18px 22px 0 #9fac83}.package:before{content:"GOOD\\A THINGS";white-space:pre;position:absolute;left:22px;top:30px;font-weight:950;font-size:25px;line-height:1.1}.package:after{content:"MY STORE";position:absolute;bottom:18px;left:22px;font-size:9px;letter-spacing:.16em;font-weight:800}.jar{position:absolute;right:17%;bottom:14%;width:105px;height:145px;background:#f3a88b;border:2px solid #293124;border-radius:26px 26px 18px 18px;transform:rotate(9deg)}.jar:before{content:"";position:absolute;width:57px;height:22px;background:#293124;top:-17px;left:22px;border-radius:7px}.sticker{position:absolute;right:9%;top:12%;background:white;padding:15px;border-radius:50%;font-size:10px;font-weight:900;transform:rotate(12deg)}.shop{max-width:1240px;margin:85px auto;padding:0 16px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}.section-head h2,.about h2{font-size:clamp(28px,4vw,44px);letter-spacing:-.05em;margin:8px 0}.muted{color:var(--muted);font-size:14px;line-height:1.6}.toolbar{display:flex;gap:10px;margin-bottom:22px}.field,.toolbar input,.toolbar select{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:13px;background:white;outline:none}.toolbar input{max-width:420px}.toolbar select{max-width:210px}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}.product{background:white;border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}.product-img{aspect-ratio:1/1;background:#e8eade;display:grid;place-items:center;overflow:hidden}.product-img img{width:100%;height:100%;object-fit:cover}.placeholder{font-size:54px}.product-info{padding:16px;display:flex;flex-direction:column;gap:9px;flex:1}.category{font-size:10px;color:#7d846d;text-transform:uppercase;letter-spacing:.14em;font-weight:800}.product h3{font-size:16px;margin:0}.desc{font-size:12px;color:var(--muted);line-height:1.5;flex:1}.price-row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:6px}.price{font-weight:900}.add{background:var(--lime);border:0;border-radius:50%;width:38px;height:38px;font-size:22px}.about{background:#171d2c;color:white;padding:clamp(32px,7vw,75px);display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.about .eyebrow{color:#d9f66f}.about p:last-child{color:#c5c9d2;line-height:1.8;max-width:470px}footer{padding:30px clamp(16px,5vw,70px);display:flex;justify-content:space-between;gap:16px;align-items:center;color:var(--muted);font-size:12px}.modal{width:min(480px,calc(100% - 24px));max-height:90vh;overflow:auto;border:0;border-radius:24px;padding:30px;box-shadow:0 20px 80px #11182730}.modal::backdrop{background:#11182791;backdrop-filter:blur(4px)}.modal.wide{width:min(650px,calc(100% - 24px))}.modal h2{margin:7px 0 8px;font-size:30px;letter-spacing:-.04em}.close{float:right;border:0;background:#f0f1eb;border-radius:50%;width:35px;height:35px;font-size:22px}.stack{display:grid;gap:13px;margin-top:20px}.stack label{font-size:12px;font-weight:750;display:grid;gap:7px}.stack input,.stack textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px;background:white;outline:none}.full{width:100%}.textbtn{background:none;border:0;color:#53651c;font-size:13px;padding:12px 0 0}.msg{font-size:13px;line-height:1.5;color:#4f641d}.small{font-size:11px}.cart-line{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}.cart-line button{border:0;background:#f1f2ed;border-radius:8px;padding:5px 9px}.total{display:flex;justify-content:space-between;padding:18px 0;font-size:18px}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:#151b2b;color:white;padding:12px 18px;border-radius:99px;opacity:0;pointer-events:none;transition:.2s;z-index:20;font-size:13px}.toast.show{opacity:1;transform:translate(-50%,0)}.empty{padding:30px;text-align:center;color:var(--muted);grid-column:1/-1}
+@media(max-width:800px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr}.hero-copy{padding:42px 28px 20px}.hero-art{min-height:310px}.nav{display:none}.about{grid-template-columns:1fr;gap:10px}.section-head{align-items:start;flex-direction:column}}@media(max-width:480px){.top{height:65px}.brand{font-size:10px}.actions .btn{padding:10px 11px;font-size:11px}.grid{gap:10px}.product-info{padding:12px}.product h3{font-size:14px}.hero{margin-top:12px;width:calc(100% - 20px)}.toolbar{flex-direction:column}.toolbar input,.toolbar select{max-width:none}footer{flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<header class="top"><a class="brand" href="#"><span class="mark">M</span><span id="brandText">MY STORE</span></a><nav class="nav"><a href="#shop">Shop</a><a href="#about">About</a></nav><div class="actions"><button class="btn light" id="accountBtn">Login</button><button class="btn dark" id="cartBtn">Cart <span id="count">0</span></button></div></header>
+<main><section class="hero"><div class="hero-copy"><p class="eyebrow">CURATED FOR EVERYDAY</p><h1>Good finds.<br><span>Better living.</span></h1><p class="lead">Discover useful, well-chosen products for your everyday life. Find your next favourite thing.</p><a class="btn dark" href="#shop">Explore products ↗</a><p class="muted">✓ Carefully selected &nbsp; ✓ Easy ordering</p></div><div class="hero-art"><div class="orb"></div><div class="package"></div><div class="jar"></div><div class="sticker">JUST<br>FOR YOU</div></div></section>
+<section id="shop" class="shop"><div class="section-head"><div><p class="eyebrow">THE COLLECTION</p><h2>Shop our products</h2></div><p class="muted">Simple picks, made for you.</p></div><div class="toolbar"><input id="search" type="search" placeholder="Search products..." aria-label="Search products"><select id="category"><option value="all">All categories</option></select></div><div id="products" class="grid"></div></section>
+<section id="about" class="about"><div><p class="eyebrow">A LITTLE ABOUT US</p><h2>Less scrolling.<br>More finding what you love.</h2></div><p>Welcome to our store. Browse our collection and send an order request directly to the store owner. Your order is not confirmed until the owner contacts you.</p></section></main>
+<footer><a class="brand" href="#"><span class="mark">M</span><span id="footerBrand">MY STORE</span></a><span>© <span id="year"></span> My Store</span><a href="#shop">Back to shop ↑</a></footer>
+
+<dialog id="authModal" class="modal"><button class="close" data-close="authModal">×</button><p class="eyebrow">YOUR ACCOUNT</p><h2 id="authHeading">Welcome back</h2><p class="muted">Sign in or create an account using your email.</p><form id="authForm" class="stack"><label>Email address<input id="email" type="email" required autocomplete="email" placeholder="you@example.com"></label><label>Password<input id="password" type="password" minlength="8" required autocomplete="current-password" placeholder="At least 8 characters"></label><button class="btn dark full" id="authSubmit">Login</button></form><button class="textbtn" id="toggleAuth">New here? Create an account</button><br><button class="textbtn" id="forgot">Forgot password?</button><p id="authMsg" class="msg" role="status"></p></dialog>
+<dialog id="cartModal" class="modal wide"><button class="close" data-close="cartModal">×</button><p class="eyebrow">YOUR BAG</p><h2>Your cart</h2><div id="cartLines"></div><div class="total"><span>Total</span><strong id="total">Rs 0</strong></div><form id="orderForm" class="stack"><h3>Delivery details</h3><label>Full name<input id="customerName" required autocomplete="name"></label><label>Phone number<input id="phone" required autocomplete="tel"></label><label>Delivery address<textarea id="address" required rows="3"></textarea></label><label>Notes (optional)<textarea id="notes" rows="2"></textarea></label><button class="btn dark full">Send order request</button><p class="muted small">This is an order request, not an online payment. The store owner will confirm with you.</p></form><p id="orderMsg" class="msg" role="status"></p></dialog>
+<dialog id="adminModal" class="modal wide"><button class="close" data-close="adminModal">×</button><p class="eyebrow">STORE MANAGEMENT</p><h2>Add a product</h2><p class="muted">For a live store, configure Supabase and set the admin email in config below. Never put service-role keys in browser code.</p><form id="productForm" class="stack"><label>Product name<input id="pName" required maxlength="100"></label><label>Price in PKR<input id="pPrice" type="number" min="1" step="1" required></label><label>Category<input id="pCategory" required maxlength="50"></label><label>Image URL (optional)<input id="pImage" type="url" placeholder="https://..."></label><label>Description<textarea id="pDescription" rows="3" maxlength="500"></textarea></label><button class="btn dark full">Add product</button></form><p id="adminMsg" class="msg"></p><p class="muted small">Demo products are stored only in this browser. For shared inventory across visitors, connect a database and enforce admin permissions with database policies.</p></dialog>
+<div id="toast" class="toast" role="status"></div>
+
+<script>
+/* CONFIGURATION
+   1) Paste your Supabase Project URL and anon/public key below for email auth.
+   2) In Supabase Auth settings, set your site's URL and allowed redirect URLs.
+   3) Set ADMIN_EMAIL to your own email.
+   Never place a Supabase service_role key or email password in frontend code.
+*/
+const CONFIG = {
+  storeName: "MY STORE",
+  supabaseUrl: "https://YOUR_PROJECT.supabase.co",
+  supabaseAnonKey: "YOUR_SUPABASE_ANON_PUBLIC_KEY",
+  adminEmail: "you@example.com",
+  notificationForm: "https://submit-form.com/ENudMa8Yg"
+};
+
+const $ = id => document.getElementById(id);
+const money = n => "Rs " + Number(n).toLocaleString("en-PK");
+const starterProducts = [
+ {id:"demo-1",name:"Everyday Tote",price:1800,category:"Accessories",description:"A practical carry-all for your daily essentials.",image:"",emoji:"👜"},
+ {id:"demo-2",name:"Studio Bottle",price:1250,category:"Lifestyle",description:"A simple companion for your everyday routine.",image:"",emoji:"🧴"},
+ {id:"demo-3",name:"Soft Desk Set",price:2200,category:"Lifestyle",description:"A thoughtful upgrade for your desk or workspace.",image:"",emoji:"✏️"},
+ {id:"demo-4",name:"Classic Cap",price:1500,category:"Fashion",description:"An easy everyday style essential.",image:"",emoji:"🧢"}
+];
+let products = [...starterProducts], cart = [], isSignup = false, supabaseClient = null, currentUser = null;
+try {
+  if (window.supabase && CONFIG.supabaseUrl.startsWith("https://") && !CONFIG.supabaseUrl.includes("YOUR_PROJECT") && CONFIG.supabaseAnonKey && !CONFIG.supabaseAnonKey.includes("YOUR_SUPABASE")) {
+    supabaseClient = window.supabase.createClient(CONFIG.supabaseUrl, CONFIG.supabaseAnonKey);
+  }
+} catch(e) { console.warn("Supabase setup is incomplete.", e); }
+
+$("brandText").textContent = CONFIG.storeName;
+$("footerBrand").textContent = CONFIG.storeName;
+document.title = CONFIG.storeName + " | Online Shop";
+$("year").textContent = new Date().getFullYear();
+
+function toast(text){const el=$("toast");el.textContent=text;el.classList.add("show");setTimeout(()=>el.classList.remove("show"),2800)}
+function openModal(id){$(id).showModal()}
+document.querySelectorAll("[data-close]").forEach(b=>b.addEventListener("click",()=>$(b.dataset.close).close()));
+document.querySelectorAll("dialog").forEach(d=>d.addEventListener("click",e=>{if(e.target===d)d.close()}));
+
+function renderProducts(){
+ const q=$("search").value.trim().toLowerCase(), cat=$("category").value;
+ const list=products.filter(p=>(cat==="all"||p.category===cat)&&(`${p.name} ${p.description} ${p.category}`).toLowerCase().includes(q));
+ const cats=[...new Set(products.map(p=>p.category).filter(Boolean))], old=$("category").value;
+ $("category").innerHTML='<option value="all">All categories</option>'+cats.map(c=>`<option value="${esc(c)}">${esc(c)}</option>`).join("");
+ if(cats.includes(old))$("category").value=old;
+ $("products").innerHTML=list.length?list.map(p=>`<article class="product"><div class="product-img">${p.image?`<img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy" onerror="this.remove()">`:`<span class="placeholder">${p.emoji||"🛍️"}</span>`}</div><div class="product-info"><span class="category">${esc(p.category)}</span><h3>${esc(p.name)}</h3><p class="desc">${esc(p.description||"A great pick for everyday use.")}</p><div class="price-row"><span class="price">${money(p.price)}</span><button class="add" data-add="${esc(p.id)}" aria-label="Add ${esc(p.name)} to cart">+</button></div></div></article>`).join(""):'<div class="empty">No products found. Try another search.</div>';
+ document.querySelectorAll("[data-add]").forEach(b=>b.addEventListener("click",()=>addToCart(b.dataset.add)));
+}
+function esc(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function addToCart(id){const p=products.find(x=>x.id===id);if(!p)return;const line=cart.find(x=>x.id===id);line?line.qty++:cart.push({...p,qty:1});renderCart();toast("Added to your cart")}
+function renderCart(){
+ $("count").textContent=cart.reduce((n,p)=>n+p.qty,0);
+ $("cartLines").innerHTML=cart.length?cart.map(p=>`<div class="cart-line"><div><strong>${esc(p.name)}</strong><br><span class="muted">${money(p.price)} each</span></div><div>× ${p.qty}</div><div><button data-remove="${esc(p.id)}" aria-label="Remove one">−</button> <button data-plus="${esc(p.id)}" aria-label="Add one">+</button></div></div>`).join(""):'<p class="muted">Your cart is empty. Add a product to get started.</p>';
+ $("total").textContent=money(cart.reduce((n,p)=>n+p.price*p.qty,0));
+ document.querySelectorAll("[data-remove]").forEach(b=>b.onclick=()=>{const p=cart.find(x=>x.id===b.dataset.remove);if(p.qty>1)p.qty--;else cart=cart.filter(x=>x.id!==b.dataset.remove);renderCart()});
+ document.querySelectorAll("[data-plus]").forEach(b=>b.onclick=()=>{const p=cart.find(x=>x.id===b.dataset.plus);if(p)p.qty++;renderCart()});
+ $("orderForm").style.display=cart.length?"grid":"none";
+}
+async function sendForm(data){
+ // FormSubmit-compatible endpoint. Never include passwords or authentication tokens.
+ const response=await fetch(CONFIG.notificationForm,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(data)});
+ if(!response.ok)throw new Error("Notification form rejected the request ("+response.status+"). Check the form service settings.");
+ return true;
+}
+$("search").addEventListener("input",renderProducts);$("category").addEventListener("change",renderProducts);
+$("cartBtn").onclick=()=>{renderCart();openModal("cartModal")};
+$("accountBtn").onclick=async()=>{
+ if(currentUser){if(supabaseClient)await supabaseClient.auth.signOut();currentUser=null;$("accountBtn").textContent="Login";toast("Signed out");return}
+ isSignup=false;setAuthMode();$("authMsg").textContent="";openModal("authModal")
+};
+function setAuthMode(){$("authHeading").textContent=isSignup?"Create your account":"Welcome back";$("authSubmit").textContent=isSignup?"Create account":"Login";$("toggleAuth").textContent=isSignup?"Already have an account? Login":"New here? Create an account"}
+$("toggleAuth").onclick=()=>{isSignup=!isSignup;setAuthMode();$("authMsg").textContent=""};
+$("forgot").onclick=async()=>{
+ const email=$("email").value.trim();if(!email){$("authMsg").textContent="Enter your email address first.";return}
+ if(!supabaseClient){$("authMsg").textContent="Set up Supabase URL and anon key in CONFIG first.";return}
+ const {error}=await supabaseClient.auth.resetPasswordForEmail(email,{redirectTo:location.origin});
+ $("authMsg").textContent=error?error.message:"If the email is registered, a password reset link will be sent."
+};
+$("authForm").addEventListener("submit",async e=>{
+ e.preventDefault();const email=$("email").value.trim(),password=$("password").value;
+ if(!supabaseClient){$("authMsg").textContent="Email login is not activated yet. Add your Supabase project URL and anon/public key in CONFIG inside this file.";return}
+ $("authSubmit").disabled=true;$("authMsg").textContent="Please wait…";
+ try{
+  if(isSignup){
+   const {data,error}=await supabaseClient.auth.signUp({email,password,options:{emailRedirectTo:location.origin}});
+   if(error)throw error;
+   // Only email + event are sent to your form. Passwords are never sent.
+   try{await sendForm({event:"New customer signup",email,created_at:new Date().toISOString(),site:location.origin})}
+   catch(notifyErr){console.error(notifyErr);$("authMsg").textContent="Account request processed. Form notification could not be confirmed; check the form service settings.";$("authSubmit").disabled=false;return}
+   $("authMsg").textContent=data.session?"Account created. You are signed in.":"Check your inbox to verify your email. Notification request sent.";
+  }else{
+   const {data,error}=await supabaseClient.auth.signInWithPassword({email,password});if(error)throw error;
+   currentUser=data.user;$("accountBtn").textContent="Logout";$("authModal").close();toast("Signed in successfully");
+  }
+ }catch(err){$("authMsg").textContent=err.message||"Something went wrong."}
+ finally{$("authSubmit").disabled=false}
+});
+if(supabaseClient){
+ supabaseClient.auth.getSession().then(({data})=>{currentUser=data.session?.user||null;updateAccountButton()});
+ supabaseClient.auth.onAuthStateChange((_event,session)=>{currentUser=session?.user||null;updateAccountButton()});
+}
+function updateAccountButton(){$("accountBtn").textContent=currentUser?"Logout":"Login"}
+$("orderForm").addEventListener("submit",async e=>{
+ e.preventDefault();if(!cart.length){$("orderMsg").textContent="Your cart is empty.";return}
+ const order={event:"New store order",customer_name:$("customerName").value.trim(),phone:$("phone").value.trim(),address:$("address").value.trim(),notes:$("notes").value.trim(),items:cart.map(p=>({name:p.name,quantity:p.qty,unit_price:p.price})),total_pkr:cart.reduce((n,p)=>n+p.price*p.qty,0),created_at:new Date().toISOString()};
+ const btn=e.submitter;btn.disabled=true;$("orderMsg").textContent="Sending order request…";
+ try{await sendForm(order);$("orderMsg").textContent="Order request sent. The store owner will contact you to confirm.";cart=[];renderCart();e.target.reset()}
+ catch(err){$("orderMsg").textContent="Could not confirm delivery of the order request. Please try again or contact the store owner.";console.error(err)}
+ finally{btn.disabled=false}
+});
+$("productForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ if(!currentUser||!CONFIG.adminEmail||currentUser.email.toLowerCase()!==CONFIG.adminEmail.toLowerCase()){$("adminMsg").textContent="Admin access denied. Sign in with the configured admin email.";return}
+ const p={id:"custom-"+Date.now(),name:$("pName").value.trim(),price:Number($("pPrice").value),category:$("pCategory").value.trim(),image:$("pImage").value.trim(),description:$("pDescription").value.trim(),emoji:"🛍️"};
+ products.push(p);try{localStorage.setItem("store_demo_products",JSON.stringify(products.filter(x=>!String(x.id).startsWith("demo-"))))}catch(e){}
+ renderProducts();$("productForm").reset();$("adminMsg").textContent="Product added in this browser. For a live shared catalogue, connect a database with secure policies.";toast("Product added");
+});
+try{const saved=JSON.parse(localStorage.getItem("store_demo_products")||"[]");products=[...products,...saved]}catch(e){}
+renderProducts();renderCart();
+// Admin panel shortcut: after signing in as configured admin, press Alt+Shift+A.
+document.addEventListener("keydown",e=>{if(e.altKey&&e.shiftKey&&e.key.toLowerCase()==="a"){if(currentUser&&CONFIG.adminEmail&&currentUser.email.toLowerCase()===CONFIG.adminEmail.toLowerCase())openModal("adminModal");else toast("Sign in with the configured admin email first.")}});
+</script>
+</body>
+</html>
